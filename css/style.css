@@ -8,6 +8,20 @@
 
 #header-sm-dir {
     background-image: linear-gradient(to bottom, rgba(36,151,243,1), rgba(29,134,218,1));
+    color: white;
+}
+.v-divide {
+    height: 80%;
+    width: 1px;
+    background-color: black;
+    opacity: 0.1;
+    margin: 0 10px;
+}
+.icon-wrap {
+    max-width: 20px;
+}
+.icon-wrap > img {
+    width: 100%;
 }
 
 nav {
@@ -16,6 +30,7 @@ nav {
     background-size: cover ;
     min-height: 100px;
     padding: 15px 5px;
+    padding-bottom: 0;
 }
 
 .nav-items {
@@ -23,6 +38,7 @@ nav {
     background-repeat: no-repeat;
     background-size: 100% 50%;
     background-position-y: bottom;
+    max-width: 600px;
 }
 
 .nav-icon {
@@ -31,6 +47,7 @@ nav {
     flex-flow: column wrap;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 .nav-icon > img {
     max-width: 80%;
@@ -45,5 +62,4 @@ nav {
     border-bottom: 15px solid white;
     position: absolute;
     bottom: 0;
-    left: 150px;
 }

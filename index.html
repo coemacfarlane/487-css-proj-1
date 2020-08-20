@@ -6,29 +6,34 @@
     <title>Project 1 CSS Extream</title>
     <!-- LINKS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="container-fluid px-0">
         <div class="row w-100 px-0 mx-0">
             <div id="header-sm-dir" class="d-flex flex-row justify-content-end w-100">
-                <p><b>MINI of Raleigh</b></p>
-                <span class="v-divide"></span>
-                <div class="icon-wrap">
-                    <img src="" alt="">
-                </div>
-                <span class="v-divide"></span>
-                <div class="icon-wrap">
-                    <img src="" alt="">
+                <div class="container d-flex flex-row justify-content-end align-items-center py-2 h-100">
+                    <p class="m-0"><b>MINI of Raleigh</b></p>
+                    <span class="v-divide"></span>
+                    <div class="icon-wrap">
+                        <img src="imgs/question.png" alt="">
+                    </div>
+                    <span class="v-divide"></span>
+                    <div class="icon-wrap">
+                        <img src="imgs/gear.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <nav class="row w-100 mx-0 d-flex flex-row align-items-center justify-content-center">
-            <div class="container h-100 nav-items d-flex flex-row justify-content-center">
+        <nav class="row w-100 mx-0 d-flex flex-row align-items-center justify-content-center position-relative">
+            <div class="container h-100 nav-items d-flex flex-row justify-content-center ">
                 <div class="h-100 w-100 row d-flex flex-row justify-content-center flex-nowrap">
-                    <div class="nav-icon">
+                    <div class="nav-icon active">
                         <img class="" src="imgs/icon-dash.png" alt="">
                         <img class="" src="imgs/shadow-02.png" alt="">
+                        <div id="indicator"></div>
                     </div>
                     <div class="nav-icon">
                         <img src="imgs/icon-customer.png" alt="">
@@ -51,9 +56,26 @@
                         <img class="" src="imgs/shadow-02.png" alt="">
                     </div>
                 </div>
+                
             </div>
-            <div id="indicator"></div>
+            
         </nav>
     </header>
+
+    <section class="container dashboard">
+        <div class="row">
+            <h1>Dashboard</h1>
+            <form id="search-bar" action="search">
+                <input type="text" name="search">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <section class="container content">
+        
+    </section>
+
+    <footer></footer>
 </body>
 </html>
