@@ -1,0 +1,49 @@
+* {
+
+}
+
+:root {
+
+}
+
+#header-sm-dir {
+    background-image: linear-gradient(to bottom, rgba(36,151,243,1), rgba(29,134,218,1));
+}
+
+nav {
+    background-image: url('/imgs/headerbgelts-02.png');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    min-height: 100px;
+    padding: 15px 5px;
+}
+
+.nav-items {
+    background-image: url('/imgs/headerbgelts-03.png');
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position-y: bottom;
+}
+
+.nav-icon {
+    /* padding: 5px 10px; */
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-icon > img {
+    max-width: 80%;
+    min-width: 20px;
+}
+
+#indicator {
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+}
