@@ -4,10 +4,21 @@
 
 :root {
     --green: rgb(51,204,102);
-    --blue: rgb(36.152,244);
+    --blue: rgb(36,152,244);
     --dark-blue: rgb(18,69,112);
     --orange: rgb(255,155,19);
-    --grey: rgb(119,119,119);
+    --grey: rgb(110,110,110);
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+p {
+    color: var(--grey);
+}
+a:hover {
+    text-decoration: none;  
+    opacity: 0.8;
 }
 
 /* HEADER */
@@ -74,4 +85,111 @@ nav {
     background-color: var(--green);
     color: white;
     border-radius: 10px;
+    margin-top: 1em;
+}
+
+#search-bar input{
+    border: none;
+    border-radius: 3px 0px 0px 3px;
+}
+#search-bar input:focus{
+    outline: 0;
+}
+#search-bar button {
+    border: none;
+    cursor: pointer;
+    color: var(--blue);
+    padding: 1px 8px;
+    margin: 0;
+    background-color: white;
+    border-radius: 0px 3px 3px 0px;
+}
+
+/* 
+CONTENT
+ */
+.dashboard {
+    margin-top: 1em;
+    background-image: linear-gradient(360deg, rgba(255,255,255,0) 50%, rgba(246,246,246,1) 100%);
+    border-radius: 8px;
+    box-shadow: inset 2px 1px 3px rgba(110,110,110, 0.1), -2px -1px 0px rgba(119,119,119, 0);
+    position: relative;
+}
+.fade-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    background-image: linear-gradient(180deg, rgba(255,255,255, 0) 15%, rgba(255,255,255, 1) 75%);
+}
+
+.content {
+    background-color: white;
+    box-shadow: -1px 2px 1px rgba(190,190,190,0.5),
+    -1px -2px 1px rgba(190,190,190,0.5) inset;
+    z-index: 99;
+}
+.content h1, h2, h3, h4 {
+    color: var(--blue);
+}
+
+.col-border {
+    box-shadow: 1px 0 2px rgba(119,119,119, 0.3);
+}
+
+.bottom-border {
+    border-bottom: solid 1px rgba(190,190,190,0.3);
+}
+
+/* tasks */
+.task {
+    color: var(--blue);
+}
+
+.task.complete {
+    filter: grayscale(100%);
+    opacity: 0.4;
+}
+
+.task .btn.btn-outline-secondary {
+    display: flex;
+     flex-flow: row nowrap;
+    max-height: 2.5em;
+    border-color: rgba(190,190,190,0.5);
+    color: var(--blue);
+    padding: 5px 10px;
+    min-width: 65px;
+}
+.task .btn.btn-outline-secondary i {
+    font-size-adjust: 0.8;
+}
+.task .btn.btn-outline-secondary p {
+    width: 100%;
+}
+.task .btn.btn-outline-secondary:hover {
+    background-color: rgba(190,190,190,0.5);
+}
+
+.task-num {
+    background-color: var(--green);
+    margin: auto;
+    text-align: center;
+    height: 2em; width: 2em;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+}
+
+.task h4 {
+    padding: 0 0.5em;
+}
+
+/* recommendations */
+.rec i {
+    color: var(--green);
+    font-size-adjust: 0.8;
+    padding: 8px 1em 8px 0.5em;
+}
+
+.rec-type {
+    font-size: 0.8em;
 }

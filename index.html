@@ -31,28 +31,28 @@
             <div class="container h-100 nav-items d-flex flex-row justify-content-center ">
                 <div class="h-100 w-100 row d-flex flex-row justify-content-center flex-nowrap">
                     <div class="nav-icon active">
-                        <img class="" src="imgs/icon-dash.png" alt="">
+                        <a href="#"><img class="" src="imgs/icon-dash.png" alt=""></a>
                         <img class="" src="imgs/shadow-02.png" alt="">
                         <div id="indicator"></div>
                     </div>
                     <div class="nav-icon">
-                        <img src="imgs/icon-customer.png" alt="">
+                        <a href="#"><img src="imgs/icon-customer.png" alt=""></a>
                         <img class="" src="imgs/shadow-02.png" alt="">
                     </div>
                     <div class="nav-icon">
-                        <img src="imgs/icon-message.png" alt="">
+                        <a href="#"><img src="imgs/icon-message.png" alt=""></a>
                         <img class="" src="imgs/shadow-02.png" alt="">
                     </div>
                     <div class="nav-icon">
-                        <img src="imgs/icon-promote.png" alt="">
+                        <a href="#"><img src="imgs/icon-promote.png" alt=""></a>
                         <img class="" src="imgs/shadow-02.png" alt="">
                     </div>
                     <div class="nav-icon">
-                        <img src="imgs/icon-page.png" alt="">
+                        <a href="#"><img src="imgs/icon-page.png" alt=""></a>
                         <img class="" src="imgs/shadow-02.png" alt="">
                     </div>
                     <div class="nav-icon">
-                        <img src="imgs/icon-analytics.png" alt="">
+                        <a href="#"><img src="imgs/icon-analytics.png" alt=""></a>
                         <img class="" src="imgs/shadow-02.png" alt="">
                     </div>
                 </div>
@@ -63,105 +63,113 @@
     </header>
 
     <section class="container dashboard-bar">
-        <div class="row">
-            <h1>Dashboard</h1>
+        <div class=" px-5 py-3 row w-100 d-flex flex-row justify-content-between align-items-center">
+            <h1 class="m-0">Dashboard</h1>
             <form id="search-bar" action="search">
-                <input type="text" name="search">
-                <button><i class="fa fa-search"></i></button>
+                <input type="text" name="search"><button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
     </section>
 
-    <section class="container dashboard">
-        <div class="container content">
-            <div class="row">
-                <div class="col-sm-2">
-                    <h5>announcements</h5>
+    <section class="container dashboard p-3">
+        <div class="fade-overlay"></div>
+        <div class="container content p-0">
+            <div class="row m-0">
+                <div class="col-sm-2 col-border">
+                    <h5>ANNOUNCEMENTS</h5>
                 </div>
-                <div class="col-sm-9">
+                <div class="col-sm-9 col-border">
                     <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</p>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-1 col-border">
                     <button><i class="fa fa-chevron-left"></i></button>
                     <button><i class="fa fa-chevron-right"></i></button>
                 </div>
             </div>
-            <div class="row">
+            <div class="row m-0">
                 <div class="col-md-5">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="row">
-                                <h1>Tasks</h1>
+                        <div class="col-md-12 col-border pt-3">
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <h2>Tasks</h2>
                                 <i class="fa fa-gear"></i>
                             </div>
-                            <div class="row task">
-                                <div class="task-name complete">
-                                    <div class="task-num"><h3>1</h3></div>
-                                    <h3>Welcome Contacts</h3>
+                            <div class="row task d-flex flex-row justify-content-between flex-nowrap p-3 bottom-border complete">
+                                <div class="task-name complete d-flex flex-row align-items-center">
+                                    <div class="task-num"><h5>1</h5></div>
+                                    <a href="#"><h4>Welcome Contacts</h4></a>
                                 </div>
-                                <button><i class="fa fa-user"></i> <h4>32</h4></button>
+                                <button type="button" class="btn btn-outline-secondary d-flex flex-row align-items-center" ><i class="fa fa-user"></i> <p class="px-1 m-0">32</p></button>
                             </div>
-                            <div class="row task">
-                                <div class="task-name">
-                                    <div class="task-num"><h3>2</h3></div>
-                                    <h3>Provide Responses</h3>
+                            <div class="row task d-flex flex-row justify-content-between flex-nowrap p-3 bottom-border">
+                                <div class="task-name complete d-flex flex-row align-items-center">
+                                    <div class="task-num"><h5>2</h5></div>
+                                    <a href="#"><h4>Provide Responses</h4></a>
                                 </div>
-                                <button><i class="fa fa-user"></i> <h4>36</h4></button>
+                                <button type="button" class="btn btn-outline-secondary d-flex flex-row align-items-center" ><i class="fa fa-user"></i> <p class="px-1 m-0">36</p></button>
                             </div>
-                            <div class="row task">
-                                <div class="task-name">
-                                    <div class="task-num"><h3>3</h3></div>
-                                    <h3>Review Activity</h3>
+                            <div class="row task d-flex flex-row justify-content-between flex-nowrap p-3 bottom-border">
+                                <div class="task-name complete d-flex flex-row align-items-center">
+                                    <div class="task-num"><h5>3</h5></div>
+                                    <a href="#"><h4>Review Activity</h4></a>
                                 </div>
-                                <button><i class="fa fa-user"></i> <h4>36</h4></button>
+                                <button type="button" class="btn btn-outline-secondary d-flex flex-row align-items-center" ><i class="fa fa-user"></i> <p class="px-1 m-0">36</p></button>
                             </div>
-                            <div class="row task">
-                                <div class="task-name">
-                                    <div class="task-num"><h3>4</h3></div>
-                                    <h3>Reach Out</h3>
+                            <div class="row task d-flex flex-row justify-content-between flex-nowrap p-3 bottom-border">
+                                <div class="task-name complete d-flex flex-row align-items-center">
+                                    <div class="task-num"><h5>4</h5></div>
+                                    <a href="#"><h4>Reach Out</h4></a>
                                 </div>
-                                <button><i class="fa fa-user"></i> <h4>3</h4></button>
+                                <button type="button" class="btn btn-outline-secondary d-flex flex-row align-items-center" ><i class="fa fa-user"></i> <p class="px-1 m-0">3</p></button>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="row">
-                                <h1>Recommendations</h1>
+                        <div class="col-md-12 col-border pt-3">
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <h2>Recommendations</h2>
                             </div>
-                            <div class="row">
-                                <div><i class="fa fa-file-text-o"></i></div>
-                                <div>
-                                    <p class="rec-type">Article</p>
-                                    <p>7 Steps to getting more Fans</p>
+                            <div class="rec d-flex flex-row justify-content-between flex-nowrap py-3 bottom-border complete">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div><i class="fa fa-file-text-o"></i></div>
+                                    <a href="#">
+                                        <p class="rec-type">Article</p>
+                                        <p>7 Steps to getting more Fans</p>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div><i class="fa fa-file-text-o"></i></div>
-                                <div>
-                                    <p class="rec-type">Article</p>
-                                    <p>Increase traction with more interactions</p>
+                            <div class="rec d-flex flex-row justify-content-between flex-nowrap py-3 bottom-border complete">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div><i class="fa fa-file-text-o"></i></div>
+                                    <a href="#">
+                                        <p class="rec-type">Article</p>
+                                        <p>Increase traction with more interactions</p>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div><i class="fa fa-check"></i></div>
-                                <div>
-                                    <p class="rec-type">Checklist</p>
-                                    <p>Creating a Promotion</p>
+                            <div class="rec d-flex flex-row justify-content-between flex-nowrap py-3 bottom-border complete">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div><i class="fa fa-check"></i></div>
+                                    <a href="#">
+                                        <p class="rec-type">Checklist</p>
+                                        <p>Creating a Promotion</p>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div><i class="fa fa-lightbulb-o"></i></div>
-                                <div>
-                                    <p class="rec-type">Tip</p>
-                                    <p>Share More</p>
+                            <div class="rec d-flex flex-row justify-content-between flex-nowrap py-3 bottom-border complete">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div><i class="fa fa-lightbulb-o"></i></div>
+                                    <a href="#">
+                                        <p class="rec-type">Tip</p>
+                                        <p>Share More</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <div class="row">
+                    <div class="row col-border">
                         <div class="col-md-12">
                             <h1>Analytics</h1>
                         </div>
@@ -169,16 +177,16 @@
                         <div class="col-sm-3"></div>
                         <div class="col-md-12"></div>
                     </div>
-                    <div class="row">
+                    <div class="row col-border">
                         <div class="col-sm-6"></div>
                         <div class="col-sm-6"></div>
                     </div>
-                    <div class="row">
+                    <div class="row col-border">
                         <div class="col-md-12"></div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row m-0">
                 <div class="col-md-4">
                     <div>
                         <img src="" alt="">
