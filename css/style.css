@@ -21,6 +21,10 @@ a:hover {
     opacity: 0.8;
 }
 
+.color-white {
+    color: white;
+}
+
 /* HEADER */
 #header-sm-dir {
     background-image: linear-gradient(to bottom, rgba(36,151,243,1), rgba(29,134,218,1));
