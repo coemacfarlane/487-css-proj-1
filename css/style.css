@@ -133,12 +133,13 @@ nav {
 /* 
 CONTENT
  */
-.dashboard {
+#dashboard {
     margin-top: 1em;
     background-image: linear-gradient(360deg, rgba(255,255,255,0) 50%, rgba(246,246,246,1) 100%);
     border-radius: 8px;
     box-shadow: inset 2px 1px 3px rgba(110,110,110, 0.1), -2px -1px 0px rgba(119,119,119, 0);
     position: relative;
+    padding-bottom: 0px !important;
 }
 .fade-overlay {
     position: absolute;
@@ -312,7 +313,7 @@ CONTENT
     height: 70px;
     width: 70px;
     border-radius: 35px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -330,4 +331,37 @@ CONTENT
 }
 .carousel-content {
     z-index: 999;
+}
+
+/* ads/promos */
+.promo-card {
+    border-radius: 5px;
+    position: relative;
+    height: 100%;
+}
+.promo-card-bg {
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    height: 90%; 
+    width: 100%;
+    box-shadow: 1px 0 2px rgba(119,119,119, 0.3), -1px 0 2px rgba(119,119,119, 0.3);
+}
+.promo-img-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.promo-img-wrap.inner-fit {
+    height: 90%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.promo-img-wrap img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
