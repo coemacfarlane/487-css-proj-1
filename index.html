@@ -78,22 +78,22 @@
     <section id="dashboard" class="container p-3">
         <div class="fade-overlay"></div>
         <div class="container content p-0">
-            <div class="row m-0">
+            <div id="announcements" class="row m-0">
                 <div class="col-lg-2 col-md-12 col-border d-flex flex-column justify-content-center py-3 px-0">
                     <p class="color-orange text-center"><strong>ANNOUNCEMENTS</strong></p>
                 </div>
                 <div class="col-lg-9 col-md-11 col-border d-flex flex-column justify-content-center py-3">
                     <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</p>
                 </div>
-                <div class="col-md-1 col-sm-12 col-border d-flex flex-row justify-content-center align-items-center py-3">
-                    <button><i class="fa fa-chevron-left"></i></button>
-                    <button><i class="fa fa-chevron-right"></i></button>
+                <div class="col-md-1 col-sm-12 col-border d-flex flex-row justify-content-around align-items-center py-3">
+                    <button class="bg-white"><i class="fa fa-chevron-left color-orange "></i></button>
+                    <button class="bg-white"><i class="fa fa-chevron-right color-orange"></i></button>
                 </div>
             </div>
             <div class="row m-0">
-                <div class="col-md-5">
+                <div class="col-md-5 col-border">
                     <div class="row">
-                        <div class="col-md-12 col-border pt-3">
+                        <div class="col-md-12 border-bottom pt-3">
                             <div class="d-flex flex-row justify-content-between align-items-center">
                                 <h2>Tasks</h2>
                                 <i class="fa fa-gear"></i>
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 col-border pt-3">
+                        <div class="col-md-12 pt-3">
                             <div class="d-flex flex-row justify-content-between align-items-center">
                                 <h2>Recommendations</h2>
                             </div>
@@ -180,14 +180,17 @@
                             </div>
                         </div>
                         <div class="col-sm-9 right-border">
-                            <div class="d-flex flex-row justify-content-between align-items-center">
-                                <p class="color-grey">ACTIVITY</p>
-                                <select class="custom-select">
-                                    <option selected><p>06/28/11 - 07/21/11</p></option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
+                            <div class="row d-flex flex-row justify-content-between align-items-center">
+                                <div class="col-md-6"><p class="color-grey">ACTIVITY</p></div>
+                                <div class="col-md-6">
+                                    <select class="custom-select">
+                                        <option selected><p>06/28/11 - 07/21/11</p></option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <i class="fa fa-chevron-down color-orange"></i>
+                            </div>
                             </div>
                             <div class="w-100 img-cover py-3">
                                 <img src="imgs/graph.png" alt="Acitvity Graph">
@@ -308,8 +311,8 @@
         </div>
     </section>
     <section id="ads" class="container px-3">
-        <div class="row w-100 mx-auto py-3 bg-blue">
-            <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
+        <div class="row w-100 mx-auto py-3 bg-blue d-flex flex-row justify-content-center col-border">
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
                 <div class="promo-card d-flex flex-column justify-content-center">
                     <div class="promo-card-bg"></div>
                     <div class=" promo-img-wrap inner-fit">
@@ -317,7 +320,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
                 <div class="promo-card d-flex flex-column justify-content-center">
                     <div class="promo-card-bg"></div>
                     <div class=" promo-img-wrap">
@@ -325,7 +328,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
                 <div class="promo-card d-flex flex-column justify-content-center">
                     <div class="promo-card-bg"></div>
                     <div class=" promo-img-wrap inner-fit">
@@ -338,24 +341,24 @@
 
     <footer class="container-fluid">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-md-3 order-md-1 col-sm-6 order-sm-1 py-2 px-2 col-border d-flex flex-row align-items-center justify-content-center">
                 <a href="#">Tutorials</a>
                 <span class="v-divide"></span>
                 <a href="#">Support</a>
                 <span class="v-divide"></span>
                 <a href="#">Blog</a>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 order-md-2 order-sm-4 py-2 px-3 col-border d-flex flex-row align-items-center justify-content-between ">
                 <p><a href="#"><b>Ariel Winter</b></a> likes your <a href="#"><b>Win A Cooper Sweepstakes</b></a> Promotion</p>
-                <i class="fa fa-chevron-up"></i>
+                <i class="fa fa-chevron-up color-blue"></i>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 order-md-3 col-sm-3 order-sm-2 py-2 px-1 col-border d-flex flex-row align-items-center justify-content-center ">
                 <div id="user-avatar">
-                    <img src="" alt="">
+                    <img src="imgs/useravatar.png" alt="">
                 </div>
                 <a href="#"><b>Logout</b></a>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 order-md-4 col-sm-3 order-sm-3 py-2 px-1 col-border d-flex flex-row align-items-center justify-content-center">
                 <div id="sm-icons">
                     <i class="fa fa-facebook-official"></i>
                     <i class="fa fa-twitter-square"></i>

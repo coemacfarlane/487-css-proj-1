@@ -1,5 +1,7 @@
-* {
-
+*:focus {
+    outline: 0;
+    border: none;
+    box-shadow: none;
 }
 
 :root {
@@ -34,6 +36,9 @@ a:hover {
 .color-orange {
     color: var(--orange) !important;
 }
+.color-blue {
+    color: var(--blue) !important;
+}
 .color-grey {
     color: var(--grey) !important;
 }
@@ -52,11 +57,12 @@ a:hover {
     color: white;
 }
 .v-divide {
-    height: 80%;
+    height: 1.6em;
     width: 1px;
     background-color: black;
     opacity: 0.1;
     margin: 0 10px;
+    display: block;
 }
 .icon-wrap {
     max-width: 20px;
@@ -169,6 +175,24 @@ CONTENT
     border-right: solid 1px rgba(190,190,190,0.3);
 }
 
+/* announcements  */
+#announcements button {
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 0.7em;
+    font-size: small;
+    border: none;
+    box-shadow: -2px -2px 2px rgba(190,190,190,0.5),
+    2px 2px 2px rgba(190,190,190,0.5);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+#announcements button > i {
+    padding: 3px;
+}
+
 /* tasks */
 .task {
     color: var(--blue);
@@ -227,6 +251,24 @@ CONTENT
 #analytics p {
     font-size: .8em;
 }
+
+.custom-select {
+    border: 1px solid rgba(190,190,190,0.7) !important;
+    font-size: small;
+    background: white !important;
+}
+.custom-select:focus {
+    box-shadow: none !important;
+}
+.custom-select + i {
+    position: relative;
+    top: calc(-2.25rem + 2px);
+    padding: 0.4em;
+    float: right;
+    border-left: 1px solid rgba(190,190,190,0.7);
+}
+
+
 #analytics .form-check-label {
     color: white;
     border-radius: 5px;
@@ -334,12 +376,17 @@ CONTENT
 }
 
 /* ads/promos */
+#ads > div{
+    box-shadow: 2px 1px 2px rgba(190,190,190,0.7);
+    margin-bottom: 40px;
+}
+
 .promo-card {
     border-radius: 5px;
     position: relative;
     height: 100%;
     min-height: 168px;
-    min-width: 230px;
+    min-width: 290px;
 }
 .promo-card-bg {
     background: white;
@@ -347,7 +394,7 @@ CONTENT
     position: absolute;
     height: 92%; 
     width: 100%;
-    box-shadow: 1px 0 2px rgba(119,119,119, 0.3), -1px 0 2px rgba(119,119,119, 0.3);
+    box-shadow: 1px 2px 3px rgba(119,119,119, 0.3), -1px 0 2px rgba(119,119,119, 0.3);
 }
 .promo-img-wrap {
     /* background-image: url(/imgs/promo1.png); */
@@ -375,4 +422,47 @@ CONTENT
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* FOOTER  */
+footer {
+    background: rgb(248, 248, 248);
+    box-shadow: 1px -2px 5px rgba(119,119,119, 0.3);
+    font-size: 0.8em;
+}
+
+footer a {
+    color: var(--blue);
+}
+
+#user-avatar {
+    width: 1.2em;
+    height: 1.2em;
+    padding: 1px;
+    margin: 3px;
+    border-radius: 2px;
+    box-shadow: 1px -1px 2px rgba(119,119,119, 0.5), -1px 1px 2px rgba(119,119,119, 0.5);
+    display: flex;
+}
+#user-avatar > img {
+    width: 100%;
+    height: 100%;
+}
+
+footer #sm-icons {
+    color: var(--grey);
+}
+
+@media only screen and (max-width: 768px) {
+    .promo-card {
+        min-height: 230px;
+        min-width: 330px;
+        overflow-x: hidden;
+    }
+    .promo-img-wrap img {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
 }
