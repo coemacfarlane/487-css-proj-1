@@ -7,12 +7,18 @@
     <!-- LINKS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.ticker.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/popper.min.js" defer></script><script src="js/script.js" defer></script>
+    <script src="js/popper.min.js" defer></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js" defer></script>
+    <script src="js/acmeticker.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="container-fluid px-0">
@@ -78,18 +84,30 @@
     <section id="dashboard" class="container p-3">
         <div class="fade-overlay"></div>
         <div class="container content p-0">
-            <div id="announcements" class="row m-0">
-                <div class="col-lg-2 col-md-12 col-border d-flex flex-column justify-content-center py-3 px-0">
-                    <p class="color-orange text-center"><strong>ANNOUNCEMENTS</strong></p>
-                </div>
-                <div class="col-lg-9 col-md-11 col-border d-flex flex-column justify-content-center py-3">
-                    <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</p>
-                </div>
-                <div class="col-md-1 col-sm-12 col-border d-flex flex-row justify-content-around align-items-center py-3">
-                    <button class="bg-white"><i class="fa fa-chevron-left color-orange "></i></button>
-                    <button class="bg-white"><i class="fa fa-chevron-right color-orange"></i></button>
-                </div>
+            <div>
+                <div class="acme-news-ticker">
+                    <div class="color-orange text-center acme-news-ticker-label bg-none col-border"><strong>ANNOUNCEMENTS</strong></div>
+                    <div class="acme-news-ticker-box col-border">
+                      <ul class="my-news-ticker">
+                        <li>
+                          <a href="#" class="color-grey">Breaking News 1</a>
+                        </li>
+                        <li>
+                          <a href="#" class="color-grey">Breaking News 2</a>
+                        </li>
+                        <li>
+                          <a href="#" class="color-grey">Breaking News 3</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="acme-news-ticker-controls acme-news-ticker-horizontal-controls">
+                      <span class="acme-news-ticker-arrow acme-news-ticker-prev"></span>
+                      <span class="acme-news-ticker-pause"></span>
+                      <span class="acme-news-ticker-arrow acme-news-ticker-next"></span>
+                    </div>
+                  </div>
             </div>
+            
             <div class="row m-0">
                 <div class="col-md-5 col-border">
                     <div class="row">
@@ -192,21 +210,15 @@
                                     <i class="fa fa-chevron-down color-orange"></i>
                             </div>
                             </div>
-                            <div class="w-100 img-cover py-3">
-                                <img src="imgs/graph.png" alt="Acitvity Graph">
-                            </div>
+                            <div id="chartContainerBar" class="bar-chart"></div>
                         </div>
                         <div class="col-sm-3">
                             <div class="d-flex flex-row justify-content-between align-items-center">
                                 <p class="color-grey">CHANNELS</p>
                             </div>
                             <div class="d-flex flex-column justify-content-around align-items-center h-100">
-                                <div class="w-100 img-cover p-3">
-                                    <img src="imgs/piegraph.png" alt="Acitvity Graph">
-                                </div> 
-                                <div class="w-100 img-cover p-3">
-                                    <img src="imgs/piegraph.png" alt="Acitvity Graph">
-                                </div>
+                                <div id="chartContainerDoughnut"></div>
+                                <div id="chartContainerDoughnut2"></div>
                             </div>
                         </div>
                         <div class="col-md-12 d-flex flex-row align-items-center justify-content-center p-4">

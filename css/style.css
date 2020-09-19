@@ -32,6 +32,9 @@ a:hover {
 .bg-orange {
     background: var(--orange);
 }
+.bg-none {
+    background: transparent;
+}
 
 .color-orange {
     color: var(--orange) !important;
@@ -176,6 +179,14 @@ CONTENT
 }
 
 /* announcements  */
+#chartContainerBar {
+    min-height: 200px;
+}
+#chartContainerDoughnut, #chartContainerDoughnut2 {
+    height: 100px;
+    width: 100%;
+}
+
 #announcements button {
     width: 1.4em;
     height: 1.4em;
